@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .page-shell {
+    animation: fadeUp 0.6s ease-out both;
+  }
+
+  .reveal-up {
+    animation: fadeUp 0.8s ease-out both;
+  }
+
+  .float-slow {
+    animation: floatSlow 5s ease-in-out infinite;
+  }
+
+  .soft-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .soft-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 30px -22px rgba(14, 116, 144, 0.7);
+  }
+
+  .reveal-section {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-card {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-section.is-visible .reveal-card {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-shell,
+  .reveal-up,
+  .float-slow,
+  .soft-hover,
+  .reveal-section {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
