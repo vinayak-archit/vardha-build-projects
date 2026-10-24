@@ -9,6 +9,7 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const basePath = process.env.NODE_ENV === 'production' ? '/vardha-build-projects' : '';
 
   return (
     <nav className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
@@ -16,7 +17,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote }) => {
         <div className="flex justify-between items-center h-16 sm:h-20 gap-3 min-w-0">
           <div className="flex items-center gap-3 min-w-0">
             <img
-              src="/images/vardha-logo.png"
+              src={`${basePath}/images/vardha-logo.png`}
               alt="Vardha Build Projects logo"
               className="h-10 sm:h-12 lg:h-14 w-auto object-contain shrink-0"
             />

@@ -1,6 +1,8 @@
 import React from 'react';
 
 export const Footer: React.FC = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/vardha-build-projects' : '';
+
   return (
     <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,7 +10,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/images/vardha-logo-2.png"
+                src={`${basePath}/images/vardha-logo-2.png`}
                 alt="Vardha Build Projects logo"
                 className="h-12 w-auto object-contain shrink-0"
               />
