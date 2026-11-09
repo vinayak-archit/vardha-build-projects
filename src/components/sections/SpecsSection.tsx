@@ -82,7 +82,7 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
-                <span className="text-xs text-slate-400">Manufactured in Sonepat Unit</span>
+                <span className="text-xs text-slate-400">Manufactured in Sonipat Unit</span>
                 <button onClick={onOpenQuote} className="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 uppercase tracking-wider">
                   Request Sample Spec Sheet <ChevronRight className="w-4 h-4" />
                 </button>

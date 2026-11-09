@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} Vardha Build Projects Private Limited. All rights reserved.</p>
-          <p>Sonepat, Haryana, India</p>
+          <p>Sonipat, Haryana, India</p>
         </div>
       </div>
     </footer>

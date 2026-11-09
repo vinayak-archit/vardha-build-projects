@@ -127,7 +127,7 @@ export const ContactSection: React.FC = () => {
                 <label className="block text-xs font-semibold text-slate-700 mb-1">Project Site / City Location</label>
                 <input
                   type="text"
-                  placeholder="e.g. Sonepat, Haryana / NH-44 Highway site"
+                  placeholder="e.g. Sonipat, Haryana / NH-44 Highway site"
                   value={inquiryForm.location}
                   onChange={(e) => updateFormField('location', e.target.value)}
                   className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-cyan-600 focus:ring-2 focus:ring-cyan-600/20 text-sm outline-none"

@@ -8,12 +8,12 @@ export const TopUtilityBar: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4 text-slate-300 leading-relaxed">
           <span className="flex items-center gap-1.5 whitespace-normal sm:whitespace-nowrap">
             <MapPin className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-            <span>883, Chopra Colony, Sonepat, Haryana (GSTIN: 06AAMCV8030C1Z9)</span>
+            <span>883, Chopra Colony, Sonipat, Haryana (GSTIN: 06AAMCV8030C1Z9)</span>
           </span>
           <span className="hidden md:inline text-slate-600">|</span>
           <span className="hidden md:flex items-center gap-1.5 whitespace-nowrap">
             <Mail className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-            vardhaconsultant@gmail.com
+            vardhabuildprojectspvt.ltd@gmail.com
           </span>
         </div>
         <div className="flex flex-wrap items-center justify-center lg:justify-end gap-2 sm:gap-4 font-medium whitespace-nowrap">
