@@ -18,19 +18,19 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) =
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-cyan-600 font-bold text-xs uppercase tracking-widest block mb-2">Step-by-Step Execution</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            4-Step PUF Panel Kiosk Construction Process
+            3-Step PUF Panel Kiosk Construction Process
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
             Our systematic approach guarantees modular precision, clean installation on site, and long service life.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {constructionStepsData.map((step, idx) => (
             <div
               key={idx}
               onClick={() => setActiveStep(idx)}
-              className={`cursor-pointer rounded-2xl p-6 transition-all duration-300 border ${
+              className={`w-full max-w-[360px] cursor-pointer rounded-2xl p-6 transition-all duration-300 border ${
                 activeStep === idx
                   ? 'bg-white border-cyan-500 shadow-xl ring-2 ring-cyan-500/20 -translate-y-1'
                   : 'bg-slate-50 border-slate-200 hover:bg-white hover:border-slate-300 shadow-sm'
