@@ -19,6 +19,7 @@ export const BenefitsSection: React.FC = () => {
             <h3 className="text-lg font-bold text-slate-900 mb-2">Lightweight & Ultra-Strong</h3>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">Engineered structural balance providing high resistance against wind load and environmental wear.</p>
           </div>
+          
           <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-all">
             <div className="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-4"><Zap className="w-6 h-6" /></div>
             <h3 className="text-lg font-bold text-slate-900 mb-2">Superior Thermal Insulation</h3>
