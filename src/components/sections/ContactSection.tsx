@@ -17,15 +17,22 @@ export const ContactSection: React.FC = () => {
               <span className="text-cyan-400 font-bold text-xs uppercase tracking-widest block mb-2">Direct Contact</span>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">Get In Touch With Our Consultants</h3>
               <p className="text-slate-300 text-xs sm:text-sm mb-8 leading-relaxed">
-                Have questions about National Highway NOC requirements or need pricing for modular PUF kiosks? Contact our team directly.
+                Have questions about National Highway NOC requirements or need pricing for PUF kiosks? Contact our team directly.
               </p>
 
               <div className="space-y-6 text-sm">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><MapPin className="w-5 h-5" /></div>
                   <div>
-                    <h4 className="font-semibold text-white">Head Office</h4>
-                    <p className="text-slate-300 text-xs mt-0.5">883, Chopra Colony, Sonepat, Haryana</p>
+                    <h4 className="font-semibold text-white">Registered Office</h4>
+                    <p className="text-slate-300 text-xs mt-0.5">883, Chopra Colony, Sonipat, Haryana</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><PhoneCall className="w-5 h-5" /></div>
+                  <div>
+                    <h4 className="font-semibold text-white">Corporate Office</h4>
+                    <p className="text-slate-300 text-xs mt-0.5">International City, Bareilly, Uttar Pradesh</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -39,14 +46,14 @@ export const ContactSection: React.FC = () => {
                   <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><Mail className="w-5 h-5" /></div>
                   <div>
                     <h4 className="font-semibold text-white">Email Address</h4>
-                    <p className="text-slate-300 text-xs mt-0.5">vardhaconsultant@gmail.com</p>
+                    <p className="text-slate-300 text-xs mt-0.5">vardhabuildprojectspvt.ltd@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><FileText className="w-5 h-5" /></div>
                   <div>
                     <h4 className="font-semibold text-white">GSTIN Registration</h4>
-                    <p className="text-slate-300 text-xs mt-0.5">06IQVPS8458H1ZN</p>
+                    <p className="text-slate-300 text-xs mt-0.5">06AAMCV8030C1Z9</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +66,7 @@ export const ContactSection: React.FC = () => {
 
           <div className="lg:col-span-7 p-8 sm:p-12">
             <h3 className="text-2xl font-bold text-slate-900 mb-2">Request Technical Quote</h3>
-            <p className="text-slate-600 text-xs sm:text-sm mb-6">Fill out the form below and our team will get back to you within 2 hours.</p>
+            <p className="text-slate-600 text-xs sm:text-sm mb-6">Fill out the form below and our team will get back to you within 24 hours.</p>
 
             <form onSubmit={handleInquirySubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -27,10 +27,10 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Vardha Build Projects Private Limited. Specializing in government clearance NOCs, NHAI approvals, and turnkey modular PUF panel store manufacturing.
+              Vardha Build Projects Private Limited. Specializing in government clearance NOCs, NHAI approvals, and modular PUF panel store manufacturing.
             </p>
             <div className="text-xs text-slate-300">
-              <strong>GSTIN:</strong> 06IQVPS8458H1ZN
+              <strong>GSTIN:</strong> 06AAMCV8030C1Z9
             </div>
           </div>
 

@@ -32,8 +32,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <div className="flex flex-wrap justify-center gap-2 mt-8">
             <button onClick={() => setActiveTab('all')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'all' ? 'bg-slate-900 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>All Offerings</button>
             <button onClick={() => setActiveTab('noc')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'noc' ? 'bg-blue-600 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>NOC & Govt Approvals</button>
-            <button onClick={() => setActiveTab('puf')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'puf' ? 'bg-cyan-600 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>PUF Kiosks & Containers</button>
-            <button onClick={() => setActiveTab('branding')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'branding' ? 'bg-slate-900 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>Branding & Printing</button>
+            <button onClick={() => setActiveTab('puf')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'puf' ? 'bg-cyan-600 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>PUF Kiosks & Cold Storage</button>
+            <button onClick={() => setActiveTab('branding')} className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${activeTab === 'branding' ? 'bg-slate-900 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>Branding & Signage</button>
           </div>
         </div>
 

@@ -24,11 +24,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenQuote }) => {
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
-              Turn-Key <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 bg-clip-text text-transparent">NOC Services</span> & Modular Construction
+              <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400 bg-clip-text text-transparent">NOC Services</span> & Modular Construction
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Streamlining statutory compliance for National Highways, Fuel Stations, and Warehouses alongside high-speed manufacturing of insulated <strong>PUF Panel Kiosks & Container Stores</strong>.
+              Streamlining statutory compliance for National Highways, Fuel Stations, and Warehouses alongside high-speed manufacturing of insulated <strong>PUF Panel Kiosks, Cold Storage & Happpy Shops</strong>.
             </p>
 
             <div className="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs sm:text-sm">
@@ -103,7 +103,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenQuote }) => {
                 <ShieldCheck className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-cyan-200">Statutory NOC & Build Combo</h4>
-                  <p className="text-xs text-slate-300 mt-0.5">We manage the NHAI, DM & Forest NOCs together with full store setup for hassle-free execution.</p>
+                  <p className="text-xs text-slate-300 mt-0.5">We manage the NHAI, DM & Forest PESO together with full setup for hassle-free execution.</p>
                 </div>
               </div>
             </div>

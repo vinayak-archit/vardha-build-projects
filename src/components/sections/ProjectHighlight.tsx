@@ -14,7 +14,7 @@ export const ProjectHighlight: React.FC<ProjectHighlightProps> = ({ onOpenQuote 
           <div className="lg:col-span-5 space-y-6">
             <span className="text-cyan-400 font-bold text-xs uppercase tracking-widest block">Client Highlight</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Turn-Key Branding & PUF Store Setup for SAFAL KISAN BAZAR
+              Branding & PUF Store Setup for SAFAL KISAN BAZAR
             </h2>
             <p className="text-slate-300 text-sm leading-relaxed">
               Complete manufacturing, structural assembly, thermal roofing, and full front-to-back retail branding executed by Vardha Build Projects.

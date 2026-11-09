@@ -16,13 +16,13 @@ export const constructionStepsData: ConstructionStep[] = [
   {
     num: "03",
     title: "PUF Panel Wall Interlocking",
-    desc: "Precision installation of 60mm insulated interlocking wall panels ensuring airtight fit and rapid clean execution.",
+    desc: "Precision installation insulated interlocking wall panels ensuring airtight fit and rapid clean execution.",
     details: ["Interlocking PUF panels (60mm)", "Fast & clean installation", "Insulated & weather resistant"]
   },
   {
     num: "04",
     title: "Roofing, Sealing & Branding",
-    desc: "Mounting of 65mm sloping PUF roof panels, waterproof trims, doors, windows, and complete corporate exterior branding.",
-    details: ["PUF roof panels (65mm)", "Waterproof sealing & trims", "Full turn-key branding finish"]
+    desc: "Mounting sloping PUF roof panels, waterproof trims, doors, windows, and complete corporate exterior branding.",
+    details: ["PUF roof panels (65mm)", "Waterproof sealing & trims", "Full branding finish"]
   }
 ];

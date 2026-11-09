@@ -38,8 +38,8 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
             <div className="bg-gradient-to-br from-slate-800 to-slate-950 border border-slate-700 p-8 rounded-3xl shadow-2xl relative">
               <div className="flex items-center justify-between border-b border-slate-700 pb-5 mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-white">SAFAL KISAN BAZAR KIOSK</h3>
-                  <p className="text-xs text-cyan-400">Featured Turn-Key Deployment Standard</p>
+                  <h3 className="text-xl font-bold text-white">KIOSK</h3>
+                  <p className="text-xs text-cyan-400">Featured Deployment Standard</p>
                 </div>
                 <div className="bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-xs font-semibold px-3 py-1 rounded-full">
                   Insulated & Fire-Retardant

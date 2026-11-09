@@ -40,7 +40,7 @@ export default function Home() {
         <ScrollRevealSection className="bg-slate-50 py-16 sm:py-20" delay={120}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12 reveal-card">
-              <span className="text-cyan-600 font-bold text-xs uppercase tracking-widest block mb-2">Complete Turn-Key Coverage</span>
+              <span className="text-cyan-600 font-bold text-xs uppercase tracking-widest block mb-2">Complete Coverage</span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
                 From government approvals to PUF kiosk delivery
               </h2>
@@ -50,19 +50,19 @@ export default function Home() {
               {[
                 {
                   title: 'Regulatory Approvals',
-                  text: 'DM, NHAI, PWD, Forest, CLU, and gas/water pipeline clearance support for fuel sites, warehouses, and private properties.',
+                  text: 'DM, NHAI, PWD, Forest, CLU, PESO, and gas/water pipeline clearance support for fuel sites, warehouses, and private properties.',
                 },
                 {
                   title: 'PUF Panel Manufacturing',
-                  text: 'Custom kiosk and store fabrication using 60mm wall and 65mm roof insulated sandwich panels for durable site-ready execution.',
+                  text: 'Custom kiosk and store fabrication using wall and roof insulated sandwich panels for durable site-ready execution.',
                 },
                 {
                   title: 'Fast Execution',
-                  text: 'Manufacturing in 5–7 days and on-site installation in 2–3 days with a focus on minimal site disruption and accelerated delivery.',
+                  text: 'Installation in 15 days with a focus on minimal site disruption and accelerated delivery.',
                 },
                 {
                   title: 'Long-Term Reliability',
-                  text: '10-year panel and insulation warranty, strong structural load retention, and easy relocation or modification for future expansion.',
+                  text: '12 Months panel and insulation warranty, strong structural load retention, and easy relocation or modification for future expansion.',
                 },
               ].map((item, index) => (
                 <div

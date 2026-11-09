@@ -59,7 +59,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) =
             <div className="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center font-bold text-xl flex-shrink-0">⚡</div>
             <div>
               <h4 className="text-lg font-bold text-slate-900">Need Rapid Deployment for your Site?</h4>
-              <p className="text-xs sm:text-sm text-slate-600">From baseline design to finished shop installation in under 10 days.</p>
+              <p className="text-xs sm:text-sm text-slate-600">From baseline design to finished shop installation in under 30 days.</p>
             </div>
           </div>
           <button onClick={onOpenQuote} className="whitespace-nowrap bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl transition-all text-sm">

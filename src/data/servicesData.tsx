@@ -17,7 +17,7 @@ export const servicesData: ServiceItem[] = [
   },
   {
     cat: "noc",
-    title: "PWD, Forest & CLU Clearances",
+    title: "PWD, Forest, CLU Clearances & PESO/Explosives",
     icon: <ShieldCheck className="w-6 h-6 text-cyan-600" />,
     desc: "Change of Land Use (CLU) permissions, Forest department approvals, and Public Works Department (PWD) road connectivity NOCs."
   },
@@ -31,7 +31,7 @@ export const servicesData: ServiceItem[] = [
     cat: "puf",
     title: "PUF Panel KIOSK & Store Fabrication",
     icon: <Factory className="w-6 h-6 text-cyan-600" />,
-    desc: "Custom engineered modular kiosks, retail outlets, container shops, and site offices constructed with thermal-efficient PUF sandwich panels."
+    desc: "Custom engineered kiosks, retail outlets, container shops, cold storage and site offices constructed with thermal-efficient PUF sandwich panels."
   },
   {
     cat: "puf",
@@ -48,12 +48,12 @@ export const servicesData: ServiceItem[] = [
 ];
 
 export const pufSpecsData: SpecItem[] = [
-  { label: "Wall Thickness", val: "60 mm", desc: "High-density polyurethane foam core" },
+  { label: "Panel Thickness (in mm)", val: "30, 40, 50, 60, 80, 100, 120, 150", desc: "High-density polyurethane foam core" },
   { label: "Roof Thickness", val: "65 mm", desc: "Enhanced thermal & rain resistance" },
   { label: "Panel Warranty", val: "10 Years", desc: "Guaranteed structural integrity" },
   { label: "Insulation Warranty", val: "10 Years", desc: "Long-term thermal conservation" },
   { label: "Mfg. Timeline", val: "5-7 Days", desc: "Rapid off-site precision production" },
-  { label: "Site Installation", val: "2-3 Days", desc: "Fast turn-key assembly on site" },
+  { label: "Site Installation", val: "2-3 Days", desc: "Fast assembly on site" },
   { label: "Load Capacity", val: "150-200 Kg", desc: "High structural load bearing rating" },
   { label: "Mobility", val: "Easy Relocate", desc: "Modular, re-locatable & expandable" }
 ];
@@ -81,6 +81,6 @@ export const constructionStepsData: ConstructionStep[] = [
     num: "04",
     title: "Roofing, Sealing & Branding",
     desc: "Mounting of 65mm sloping PUF roof panels, waterproof trims, doors, windows, and complete corporate exterior branding.",
-    details: ["PUF roof panels (65mm)", "Waterproof sealing & trims", "Full turn-key branding finish"]
+    details: ["PUF roof panels (65mm)", "Waterproof sealing & trims", "Full branding finish"]
   }
 ];
