@@ -12,6 +12,7 @@ interface ProcessSectionProps {
 
 export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) => {
   const [activeStep, setActiveStep] = useState(0);
+  const basePath = process.env.NODE_ENV === 'production' ? '/vardha-build-projects' : '';
 
   return (
     <ScrollRevealSection id="process" className="py-20 bg-slate-100">
@@ -59,7 +60,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) =
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 items-center">
             <div className="relative w-full aspect-[1448/1086] overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
               <Image
-                src="/images/puf_panel_roof_installation.jpeg"
+                src={`${basePath}/images/puf_panel_roof_installation.jpeg`}
                 alt="Roof installation process for PUF insulated panel"
                 fill
                 className="object-cover object-center"
@@ -78,7 +79,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) =
 
               <div className="relative w-full aspect-[1300/1300] overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
                 <Image
-                  src="/images/roof_panel.jpeg"
+                  src={`${basePath}/images/roof_panel.jpeg`}
                   alt="Insulated roof panel detail"
                   fill
                   className="object-cover object-center"

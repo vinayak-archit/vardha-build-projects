@@ -9,6 +9,8 @@ interface SpecsSectionProps {
 }
 
 export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/vardha-build-projects' : '';
+
   return (
     <ScrollRevealSection id="puf-specs" className="py-20 bg-slate-900 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +52,7 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
               <div className="grid grid-cols-1 gap-4">
                 <div className="relative w-full aspect-[1300/1300] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
                   <Image
-                    src="/images/roof_panel.jpeg"
+                    src={`${basePath}/images/roof_panel.jpeg`}
                     alt="PUF roof panel profile"
                     fill
                     className="object-cover object-center"
@@ -61,7 +63,7 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
                     <Image
-                      src="/images/puf_panel_info.jpeg"
+                      src={`${basePath}/images/puf_panel_info.jpeg`}
                       alt="PUF panel cross section"
                       fill
                       className="object-cover"
@@ -70,7 +72,7 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
                   </div>
                   <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
                     <Image
-                      src="/images/puf_panel_1.jpeg"
+                      src={`${basePath}/images/puf_panel_1.jpeg`}
                       alt="PUF roof panel wall section"
                       fill
                       className="object-cover"
