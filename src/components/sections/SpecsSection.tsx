@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Check, ChevronRight } from 'lucide-react';
 import { ScrollRevealSection } from '@/components/common/ScrollRevealSection';
 import { pufSpecsData } from '@/data/servicesData';
@@ -35,8 +36,8 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
           </div>
 
           <div className="lg:col-span-6">
-            <div className="bg-gradient-to-br from-slate-800 to-slate-950 border border-slate-700 p-8 rounded-3xl shadow-2xl relative">
-              <div className="flex items-center justify-between border-b border-slate-700 pb-5 mb-6">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-950 border border-slate-700 p-4 sm:p-6 rounded-3xl shadow-2xl relative">
+              <div className="flex items-center justify-between border-b border-slate-700 pb-4 mb-5">
                 <div>
                   <h3 className="text-xl font-bold text-white">KIOSK</h3>
                   <p className="text-xs text-cyan-400">Featured Deployment Standard</p>
@@ -46,42 +47,40 @@ export const SpecsSection: React.FC<SpecsSectionProps> = ({ onOpenQuote }) => {
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-cyan-600/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center font-bold text-xs">65mm</div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-white">Sloped Roof Insulation Panel</h4>
-                      <p className="text-xs text-slate-400">Heavy rain, hail & heat reflective profile</p>
-                    </div>
-                  </div>
-                  <Check className="w-5 h-5 text-emerald-400" />
+              <div className="grid grid-cols-1 gap-4">
+                <div className="relative w-full aspect-[1300/1300] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
+                  <Image
+                    src="/images/roof_panel.jpeg"
+                    alt="PUF roof panel profile"
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/40 text-blue-400 flex items-center justify-center font-bold text-xs">60mm</div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-white">Wall Sandwich Panels</h4>
-                      <p className="text-xs text-slate-400">Interlocking tongue & groove alignment</p>
-                    </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
+                    <Image
+                      src="/images/puf_panel_info.jpeg"
+                      alt="PUF panel cross section"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 20vw"
+                    />
                   </div>
-                  <Check className="w-5 h-5 text-emerald-400" />
-                </div>
-
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-cyan-600/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center font-bold text-xs">MS</div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-white">Heavy MS Square Pipe Structure</h4>
-                      <p className="text-xs text-slate-400">Anti-rust coated skeleton frame</p>
-                    </div>
+                  <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
+                    <Image
+                      src="/images/puf_panel_1.jpeg"
+                      alt="PUF roof panel wall section"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 20vw"
+                    />
                   </div>
-                  <Check className="w-5 h-5 text-emerald-400" />
                 </div>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div className="mt-6 pt-5 border-t border-slate-800 flex items-center justify-between">
                 <span className="text-xs text-slate-400">Manufactured in Sonipat Unit</span>
                 <button onClick={onOpenQuote} className="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 uppercase tracking-wider">
                   Request Sample Spec Sheet <ChevronRight className="w-4 h-4" />

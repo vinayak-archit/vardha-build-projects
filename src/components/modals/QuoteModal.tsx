@@ -5,6 +5,10 @@ import { createPortal } from 'react-dom';
 import { X, Check, Send } from 'lucide-react';
 import { useInquiryForm } from '@/hooks/useInquiryForm';
 
+const INITIAL_FORM_STATE = {
+  serviceType: 'PUF Panel Kiosk Construction',
+};
+
 interface QuoteModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -17,13 +21,17 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
   useEffect(() => {
     if (!isOpen) return;
 
+    if (defaultService && inquiryForm.serviceType === INITIAL_FORM_STATE.serviceType) {
+      updateFormField('serviceType', defaultService);
+    }
+
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
     return () => {
       document.body.style.overflow = previousOverflow;
     };
-  }, [isOpen]);
+  }, [defaultService, inquiryForm.serviceType, isOpen]);
 
   if (!isOpen) return null;
 
@@ -76,7 +84,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
           <div>
             <label className="block text-xs font-semibold text-slate-700 mb-1">Select Service</label>
             <select
-              value={defaultService || inquiryForm.serviceType}
+              value={inquiryForm.serviceType}
               onChange={(e) => updateFormField('serviceType', e.target.value)}
               className="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm outline-none bg-white"
             >
@@ -86,7 +94,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
               <option>PWD / Forest / CLU Clearance</option>
               <option>Gas / Water Pipeline NOC</option>
               <option>Container Shop / Cold Storage</option>
-              <option>Branding & Printing Work</option>
+              <option>Branding & Signage</option>
             </select>
           </div>
 

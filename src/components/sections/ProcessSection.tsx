@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Check } from 'lucide-react';
 import { ScrollRevealSection } from '@/components/common/ScrollRevealSection';
 import { constructionStepsData } from '@/data/servicesData';
@@ -52,6 +53,40 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenQuote }) =
               </ul>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 rounded-[28px] border border-cyan-200 bg-white p-4 sm:p-6 shadow-[0_20px_50px_rgba(14,116,144,0.10)]">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-6 items-center">
+            <div className="relative w-full aspect-[1448/1086] overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+              <Image
+                src="/images/puf_panel_roof_installation.jpeg"
+                alt="Roof installation process for PUF insulated panel"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 65vw"
+              />
+            </div>
+
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-cyan-600">Installation highlight</span>
+                <h3 className="mt-2 text-xl font-black text-slate-900">Roof panels installed with precision alignment</h3>
+                <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Our team ensures accurate overlap, secure fastening, and weather-ready sealing for long-lasting insulated roofing.
+                </p>
+              </div>
+
+              <div className="relative w-full aspect-[1300/1300] overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <Image
+                  src="/images/roof_panel.jpeg"
+                  alt="Insulated roof panel detail"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 35vw"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
