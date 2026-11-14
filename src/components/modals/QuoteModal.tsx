@@ -35,6 +35,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, default
 
   if (!isOpen) return null;
 
+  
   return createPortal(
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4"
