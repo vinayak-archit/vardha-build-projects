@@ -1,10 +1,10 @@
 import { SpecItem } from '@/types';
 
 export const pufSpecsData: SpecItem[] = [
-  { label: "Wall Thickness", val: "60 mm", desc: "High-density polyurethane foam core" },
-  { label: "Roof Thickness", val: "65 mm", desc: "Enhanced thermal & rain resistance" },
-  { label: "Panel Warranty", val: "10 Years", desc: "Guaranteed structural integrity" },
-  { label: "Insulation Warranty", val: "10 Years", desc: "Long-term thermal conservation" },
+  { label: "Wall Thickness", val: "As per Requirement", desc: "High-density polyurethane foam core" },
+  { label: "Roof Thickness", val: "As per Requirement", desc: "Enhanced thermal & rain resistance" },
+  { label: "Panel Warranty", val: "12 Months", desc: "Guaranteed structural integrity" },
+  { label: "Insulation Warranty", val: "12 Months", desc: "Long-term thermal conservation" },
   { label: "Mfg. Timeline", val: "5-7 Days", desc: "Rapid off-site precision production" },
   { label: "Site Installation", val: "2-3 Days", desc: "Fast assembly on site" },
   { label: "Load Capacity", val: "150-200 Kg", desc: "High structural load bearing rating" },

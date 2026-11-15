@@ -25,7 +25,7 @@ export const ContactSection: React.FC = () => {
                   <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><MapPin className="w-5 h-5" /></div>
                   <div>
                     <h4 className="font-semibold text-white">Registered Office</h4>
-                    <p className="text-slate-300 text-xs mt-0.5">883, Chopra Colony, Sonipat, Haryana</p>
+                    <p className="text-slate-300 text-xs mt-0.5">883, Chopra Colony, Gohana, Sonipat, Haryana</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -46,7 +46,7 @@ export const ContactSection: React.FC = () => {
                   <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0"><Mail className="w-5 h-5" /></div>
                   <div>
                     <h4 className="font-semibold text-white">Email Address</h4>
-                    <p className="text-slate-300 text-xs mt-0.5">vardhabuildprojectspvt.ltd@gmail.com</p>
+                    <p className="text-slate-300 text-xs mt-0.5">vardhabuildprojectspvtltd@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

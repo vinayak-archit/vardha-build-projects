@@ -13,7 +13,7 @@ export const TopUtilityBar: React.FC = () => {
           <span className="hidden md:inline text-slate-600">|</span>
           <span className="hidden md:flex items-center gap-1.5 whitespace-nowrap">
             <Mail className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-            vardhabuildprojectspvt.ltd@gmail.com
+            vardhabuildprojectspvtltd@gmail.com
           </span>
         </div>
         <div className="flex flex-wrap items-center justify-center lg:justify-end gap-2 sm:gap-4 font-medium whitespace-nowrap">

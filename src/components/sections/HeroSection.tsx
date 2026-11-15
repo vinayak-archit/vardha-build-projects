@@ -38,7 +38,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenQuote }) => {
               </div>
               <div className="flex items-center gap-2 bg-slate-800/80 backdrop-blur border border-slate-700/60 px-3.5 py-2 rounded-lg">
                 <Award className="w-4 h-4 text-cyan-400" />
-                <span>10-Year Panel Warranty</span>
+                <span>12 Months Panel Warranty</span>
               </div>
               <div className="flex items-center gap-2 bg-slate-800/80 backdrop-blur border border-slate-700/60 px-3.5 py-2 rounded-lg">
                 <Clock className="w-4 h-4 text-cyan-400" />
@@ -87,15 +87,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenQuote }) => {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-slate-800">
                   <span className="text-slate-400">Site Assembly Speed</span>
-                  <span className="font-bold text-slate-200">2 - 3 Days Total</span>
+                  <span className="font-bold text-slate-200">5 - 7 Days Total</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-slate-800">
                   <span className="text-slate-400">Thermal Protection</span>
                   <span className="font-bold text-slate-200">100% Weather Resistant</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-slate-800">
-                  <span className="text-slate-400">Key Application</span>
-                  <span className="font-bold text-slate-200">Fuel Station Stores & Agri Hubs</span>
+                  <span className="text-slate-400">Versatile Application</span>
+                  <span className="font-bold text-slate-200">Suitable for All Locations</span>
                 </div>
               </div>
 
